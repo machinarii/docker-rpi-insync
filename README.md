@@ -1,4 +1,4 @@
-# Proper working Insync Docker container image for ARM32v7 running Debian 10 (Buster) - based on forks by [tiredofit](https://github.com/tiredofit/docker-insync) and [InAnimaTe](https://github.com/InAnimaTe/docker-rpi-insync)
+# Proper working Insync Docker container image for ARM32v7 running Debian 10 (Buster) - based on [tiredofit](https://github.com/tiredofit/docker-insync) and [InAnimaTe](https://github.com/InAnimaTe/docker-rpi-insync)
 
 Works with ARM32v7-based SBCs including Odroid, Raspberry Pi, etc. Sync and backup files over network with Google Drive without having to sync separately on different machines.
 
