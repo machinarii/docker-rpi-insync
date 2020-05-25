@@ -7,19 +7,19 @@ Works with ARM32v7-based SBCs including Odroid, Raspberry Pi, etc.
 * Changed architecture declaration in Dockerfile from Debian 9 (Stretch) to Debian 10 (Buster).
 * Rebuilt Docker container image using ARM32v7-based SBC (Odroid XU4).
 
-
+[Docker Hub container image](https://hub.docker.com/repository/docker/machinarii/docker-rpi-insync)
 
 Below are written by InAnimaTe and carried over as they are still relevant:
 
 Insync requires you download their bz2 "portable" package for utilization on rpi. Luckily, `insync-portable` operates almost exactly the same as `insync-headless` does meaning most commands work exactly as intended. 
 
-*My changes include:*
+*InAnimaTe's changes include:*
 * Dockerfile now downloads armhf release
 * Launcher is now in line with running portable out of its extrated directory
 * s6 executes a pre and post script by utilizing `cont-init.d` but also `99-insync-setup` which runs after the service as started to configure your account!
 * Removed a bunch of guck like zabbix config, licensing, etc..
 
-*Things I should still do:*
+*InAnimaTe's future plans:*
 * Add more logging about what the script is doing for verbosity
 * Cleanup any statically defined references that could utilize a variable instead (i.e. `BINARY_LOCATION`)
 * Actually test multiple accounts works?
@@ -27,11 +27,11 @@ Insync requires you download their bz2 "portable" package for utilization on rpi
 * Modify and test helper scripts for managing your account manually.
 
 *Resources used:*
-
-* https://forums.insynchq.com/t/using-the-insync-portable-package/8749
-* https://help.insynchq.com/installation-on-windows-linux-and-macos/advanced/linux-insync-on-raspberry-pi
-* https://blog.timekit.io/google-oauth-invalid-grant-nightmare-and-how-to-fix-it-9f4efaf1da35
-* https://github.com/just-containers/s6-overlay/issues/120#issuecomment-165094014
+* https://forums.insynchq.com/t/using-the-insync-portable-package/8749 - InAnimaTe
+* https://help.insynchq.com/installation-on-windows-linux-and-macos/advanced/linux-insync-on-raspberry-pi - InAnimaTe
+* https://blog.timekit.io/google-oauth-invalid-grant-nightmare-and-how-to-fix-it-9f4efaf1da35 - InAnimaTe
+* https://github.com/just-containers/s6-overlay/issues/120#issuecomment-165094014 - InAnimaTe
+* https://help.insynchq.com/en/articles/112904-linux-insync-on-raspberry-pi - machinarii
 
 > **Note** I modified this container for my use hence it is missing a few checks and niceties (including testing). I don't recommend you try using this unless you know what you're doing and like rolling up your sleeves. However, it will work swimmingly given you pass the right variables and have no alternate plans...
 
