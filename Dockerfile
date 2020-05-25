@@ -1,6 +1,6 @@
 FROM arm32v7/debian:buster
 
-ENV S6_OVERLAY_VERSION=v1.21.7.0
+ENV S6_OVERLAY_VERSION=v2.0.0.1
 
 WORKDIR /root
 
