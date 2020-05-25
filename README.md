@@ -97,7 +97,7 @@ The following image tags are available:
 
 * The quickest way to get started is using [docker-compose](https://docs.docker.com/compose/). See the examples folder for a working [docker-compose.yml](examples/docker-compose.yml) that can be modified for development or production use.
 
-* Visit [https://goo.gl/jv797S](https://goo.gl/jv797S) to authorize Insync for your Google Drive Account
+* Visit https://insynchq.com/auth to authorize Insync for your Google Drive Account
 
 * Set various [environment variables](#environment-variables) to understand the capabilities of this image.
 
