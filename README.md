@@ -1,4 +1,4 @@
-# Proper working Insync container image for ARM32v7 running Debian 10 (Buster) - based on Dave Conroy's repo
+# Proper working Insync container image for ARM32v7 running Debian 10 (Buster) - based on [InAnimaTe's fork](https://github.com/InAnimaTe/docker-rpi-insync)
 
 Works with ARM32v7-based SBCs including Odroid, Raspberry Pi, etc.
 
@@ -7,11 +7,11 @@ Works with ARM32v7-based SBCs including Odroid, Raspberry Pi, etc.
 * Changed architecture declaration in Dockerfile from Debian 9 (Stretch) to Debian 10 (Buster).
 * Rebuilt Docker container image using ARM32v7-based SBC (Odroid XU4).
 
-[Docker Hub container image](https://hub.docker.com/repository/docker/machinarii/docker-rpi-insync)
+[Updated Docker Hub container image](https://hub.docker.com/repository/docker/machinarii/docker-rpi-insync)
 
 Below are written by InAnimaTe and carried over as they are still relevant:
 
-Insync requires you download their bz2 "portable" package for utilization on rpi. Luckily, `insync-portable` operates almost exactly the same as `insync-headless` does meaning most commands work exactly as intended. 
+Insync requires you to download their bz2 "portable" package for utilization on rpi. Luckily, `insync-portable` operates almost exactly the same as `insync-headless` does meaning most commands work exactly as intended. 
 
 *InAnimaTe's changes include:*
 * Dockerfile now downloads armhf release
@@ -33,7 +33,6 @@ Insync requires you download their bz2 "portable" package for utilization on rpi
 * https://github.com/just-containers/s6-overlay/issues/120#issuecomment-165094014 - InAnimaTe
 * https://help.insynchq.com/en/articles/112904-linux-insync-on-raspberry-pi - machinarii
 
-> **Note** I modified this container for my use hence it is missing a few checks and niceties (including testing). I don't recommend you try using this unless you know what you're doing and like rolling up your sleeves. However, it will work swimmingly given you pass the right variables and have no alternate plans...
 
 -----------------------------------------------------------
 
