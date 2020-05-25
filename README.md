@@ -2,7 +2,7 @@
 
 Works with ARM32v7-based SBCs including Odroid, Raspberry Pi, etc. Sync and backup files over network with Google Drive without having to sync separately on different machines.
 
-*machinarii's hange log:*
+*machinarii's change log:*
 * Changed S6-overlay reference in Dockerfile to V2.0.0.1.
 * Changed architecture declaration in Dockerfile from Debian 9 (Stretch) to Debian 10 (Buster).
 * Rebuilt Docker container image using ARM32v7-based SBC (Odroid XU4).
