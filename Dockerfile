@@ -1,4 +1,4 @@
-FROM arm32v7/debian:stretch
+FROM arm32v7/debian:buster
 
 ENV S6_OVERLAY_VERSION=v1.21.7.0
 
