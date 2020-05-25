@@ -1,6 +1,6 @@
-# Proper working Insync container image for ARM32v7 running Debian 10 (Buster) - based on [InAnimaTe's fork](https://github.com/InAnimaTe/docker-rpi-insync)
+# Proper working Insync Docker container image for ARM32v7 running Debian 10 (Buster) - based on forks by [tiredofit](https://github.com/tiredofit/docker-insync) and [InAnimaTe](https://github.com/InAnimaTe/docker-rpi-insync)
 
-Works with ARM32v7-based SBCs including Odroid, Raspberry Pi, etc.
+Works with ARM32v7-based SBCs including Odroid, Raspberry Pi, etc. Sync and backup files over network with Google Drive without having to sync separately on different machines.
 
 *Change log:*
 * Changed S6-overlay reference in Dockerfile to V2.0.0.1.
