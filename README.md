@@ -2,7 +2,7 @@
 
 Works with ARM32v7-based SBCs including Odroid, Raspberry Pi, etc. Sync and backup files over network with Google Drive without having to sync separately on different machines.
 
-*Change log:*
+*machinarii's hange log:*
 * Changed S6-overlay reference in Dockerfile to V2.0.0.1.
 * Changed architecture declaration in Dockerfile from Debian 9 (Stretch) to Debian 10 (Buster).
 * Rebuilt Docker container image using ARM32v7-based SBC (Odroid XU4).
@@ -10,17 +10,17 @@ Works with ARM32v7-based SBCs including Odroid, Raspberry Pi, etc. Sync and back
 
 -----------------------------------------------------------
 
-# 
+# InAnimaTe
 
 Insync requires you to download their bz2 "portable" package for utilization on rpi. Luckily, `insync-portable` operates almost exactly the same as `insync-headless` does meaning most commands work exactly as intended. 
 
-*InAnimaTe's changes include:*
+*InAnimaTe's change log:*
 * Dockerfile now downloads armhf release
 * Launcher is now in line with running portable out of its extrated directory
 * s6 executes a pre and post script by utilizing `cont-init.d` but also `99-insync-setup` which runs after the service as started to configure your account!
 * Removed a bunch of guck like zabbix config, licensing, etc..
 
-*InAnimaTe's future plans:*
+*InAnimaTe's future log:*
 * Add more logging about what the script is doing for verbosity
 * Cleanup any statically defined references that could utilize a variable instead (i.e. `BINARY_LOCATION`)
 * Actually test multiple accounts works?
@@ -38,14 +38,8 @@ Insync requires you to download their bz2 "portable" package for utilization on 
 -----------------------------------------------------------
 
 
-# 
+# tiredofit
 
-
-[![Build Status](https://img.shields.io/docker/build/tiredofit/insync.svg)](https://hub.docker.com/r/tiredofit/insync)
-[![Docker Pulls](https://img.shields.io/docker/pulls/tiredofit/insync.svg)](https://hub.docker.com/r/tiredofit/insync)
-[![Docker Stars](https://img.shields.io/docker/stars/tiredofit/insync.svg)](https://hub.docker.com/r/tiredofit/insync)
-[![Docker 
-Layers](https://images.microbadger.com/badges/image/tiredofit/insync.svg)](https://microbadger.com/images/tiredofit/insync)
 
 # Introduction
 
@@ -59,7 +53,7 @@ Dockerfile to build an [Insync](https://www.insynchq.com) container image to syn
 
 [Changelog](CHANGELOG.md)
 
-# Authors
+# Author
 
 - [Dave Conroy](https://github.com/tiredofit/)
 
