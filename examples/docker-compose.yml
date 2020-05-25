@@ -7,7 +7,7 @@ services:
     environment:
       - ZABBIX_HOSTNAME=insync-app
       - INSYNC1_USERNAME=youremail
-      - INSYNC1_AUTH_CODE=
+      - INSYNC1_AUTH_CODE=12345
       - INSYNC_DOWNLOAD=link
     volumes:
       - ./data:/data
