@@ -1,4 +1,15 @@
-# My Turn...A proper working Insync image for the Raspberry Pi
+# Proper working Insync container image for ARM32v7 running Debian 10 (Buster) - based on Dave Conroy's repo
+
+Works with ARM32v7-based SBCs including Odroid, Raspberry Pi, etc.
+
+*Change log:*
+* Changed S6-overlay reference in Dockerfile to V2.0.0.1.
+* Changed architecture declaration in Dockerfile from Debian 9 (Stretch) to Debian 10 (Buster).
+* Rebuilt Docker container image using ARM32v7-based SBC (Odroid XU4).
+
+
+
+Below are written by InAnimaTe and carried over as they are still relevant:
 
 Insync requires you download their bz2 "portable" package for utilization on rpi. Luckily, `insync-portable` operates almost exactly the same as `insync-headless` does meaning most commands work exactly as intended. 
 
