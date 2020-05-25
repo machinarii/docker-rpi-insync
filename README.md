@@ -7,9 +7,10 @@ Works with ARM32v7-based SBCs including Odroid, Raspberry Pi, etc. Sync and back
 * Changed architecture declaration in Dockerfile from Debian 9 (Stretch) to Debian 10 (Buster).
 * Rebuilt Docker container image using ARM32v7-based SBC (Odroid XU4).
 
-[Updated container image on Docker Hub](https://hub.docker.com/repository/docker/machinarii/docker-rpi-insync)
 
-Below are written by InAnimaTe and carried over as they are still relevant:
+-----------------------------------------------------------
+
+# 
 
 Insync requires you to download their bz2 "portable" package for utilization on rpi. Luckily, `insync-portable` operates almost exactly the same as `insync-headless` does meaning most commands work exactly as intended. 
 
@@ -37,7 +38,8 @@ Insync requires you to download their bz2 "portable" package for utilization on 
 -----------------------------------------------------------
 
 
-# hub.docker.com/r/tiredofit/insync
+# 
+
 
 [![Build Status](https://img.shields.io/docker/build/tiredofit/insync.svg)](https://hub.docker.com/r/tiredofit/insync)
 [![Docker Pulls](https://img.shields.io/docker/pulls/tiredofit/insync.svg)](https://hub.docker.com/r/tiredofit/insync)
