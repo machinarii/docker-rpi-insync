@@ -1,4 +1,5 @@
 FROM arm32v7/debian:buster
+COPY qemu-arm-static /usr/bin
 
 ENV S6_OVERLAY_VERSION=v2.0.0.1
 
